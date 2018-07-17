@@ -7,4 +7,11 @@ const getPosts = (callback) => {
   setTimeout(() => callback(posts), 1000);
 }
 
-export default { getPosts };
+const setPost = (post, callback) => {
+  setTimeout(() => {
+    posts.push(post);
+    callback(post);
+  }, 1000);
+}
+
+export default { setPost, getPosts };
