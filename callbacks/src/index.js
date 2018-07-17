@@ -5,8 +5,8 @@ const displayPosts = () => {
     let output = '';
     posts.forEach((post) => {
       output += `<li>${post.title}</li>`
-    })
-    document.body.innerHTML = output;
+    });
+    document.getElementById('posts').innerHTML = output;
   });
 };
 
