@@ -1,10 +1,10 @@
 import Posts from './posts';
 
 const displayPosts = () => {
-  Posts.getPosts(function(posts) {
+  Posts.getPosts((posts) => {
     let output = '';
     posts.forEach((post) => {
-      output += `<li>${post.title}</li>`
+      output += `<li>${post.title}</li>`;
     });
     document.getElementById('posts').innerHTML = output;
   });
@@ -12,4 +12,4 @@ const displayPosts = () => {
 
 displayPosts();
 
-export default { displayPosts };
+export default displayPosts;
