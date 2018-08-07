@@ -11,3 +11,5 @@ const displayPosts = () => {
 };
 
 displayPosts();
+
+export default { displayPosts };
